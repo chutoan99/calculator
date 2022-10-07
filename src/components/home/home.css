@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+:root {
+  --background--: linear-gradient(to right, #ffe000, #799f0c);
+  --background--btn--: yellowgreen;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+.wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+}
+
+.hover-img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+  padding: 5px;
+  border: 1px solid;
+}
+
+*/ boostrap */ .bg-dark {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+}
+.offcanvas {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+}
+.offcanvas-backdrop {
+  background-color: unset !important;
+}
