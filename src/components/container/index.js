@@ -45,7 +45,6 @@ function Home() {
 
   const [indexImg, setIndexImg] = useState(JSON.parse(localStorage.getItem('indexImg')));
   const [showImg, setShowImg] = useState(true);
-  const [isPlay, setPlay] = useState(false);
   const [statusToggle, setStatusToggle] = useState(
     JSON.parse(localStorage.getItem('statusToggle'))
   );
