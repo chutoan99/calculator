@@ -1,8 +1,9 @@
 import './input.css';
-function BackGround(props) {
+
+function Input(props) {
   const { input, result, setInput } = props;
   return (
-    <div className="rounded-[5px] text-[#232323] w-full h-full text-[1.5rem] p-[20px]">
+    <div className="rounded-[5px]  w-full h-full text-[1.5rem] p-[20px]">
       <input
         className="text w-full h-[50%] outline-none text-white bg-transparent text-end"
         value={input}
@@ -16,4 +17,5 @@ function BackGround(props) {
     </div>
   );
 }
-export default BackGround;
+
+export default Input;
