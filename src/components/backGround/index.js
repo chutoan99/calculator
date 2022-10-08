@@ -1,8 +1,7 @@
 import './backGround.css';
-
+import data from '../../data';
 function BackGround(props) {
-  const { listBackground, handelChangeImgBackGround, showImg } = props;
-
+  const { handelChangeImgBackGround, showImg } = props;
   return (
     <nav className="navbar navbar-dark fixed-top">
       <div className="container-fluid sm:absolute sm:top-[100%]">
@@ -32,16 +31,16 @@ function BackGround(props) {
                   For Web
                 </h5>
                 <div className="max-h-[100vh] py-[20px] grid grid-cols-2 shrink-0">
-                  {listBackground.map((item, index) => (
+                  {data.map((item, index) => (
                     <>
-                      {index >= 0 && index < 10 ? (
+                      {index >= 0 && index < 8 ? (
                         <div
                           className="w-full h-full gap-[5px] p-[5px]"
                           key={index}
                           onClick={() => handelChangeImgBackGround(index)}
                         >
                           <img
-                            src={require(`../../imgs/${item}`)}
+                            src={item}
                             alt="backGround"
                             className="w-[100%] h-[100%] rounded-[10px]  hover-img"
                           ></img>
@@ -56,19 +55,19 @@ function BackGround(props) {
                   className="offcanvas-title text-center text-white"
                   id="offcanvasDarkNavbarLabel"
                 >
-                  For MB
+                  For MOBiLE
                 </h5>
                 <div className="max-h-[100vh] py-[20px] grid grid-cols-2  ">
-                  {listBackground.map((item, index) => (
+                  {data.map((item, index) => (
                     <>
-                      {index >= 11 && index < 27 ? (
+                      {index >= 8 ? (
                         <div
                           className="w-full h-full gap-[5px] p-[5px]"
                           key={index}
                           onClick={() => handelChangeImgBackGround(index)}
                         >
                           <img
-                            src={require(`../../imgs/${item}`)}
+                            src={item}
                             alt="backGround"
                             className="w-[100%] h-[100%] rounded-[10px]  hover-img"
                           ></img>

@@ -1,48 +1,12 @@
 import './home.css';
-import Input from '../input/index';
 import Button from '../button/index';
+import Input from '../input/index';
 import Toggle from '../toggle/index';
 import BackGround from '../backGround/index';
 import ImgBackGround from '../imgBackGround/index';
 import { useEffect, useState } from 'react';
 
 function Home() {
-  // BACKGROUND LIST
-  const listBackground = [
-    'background-00.jpg',
-    'background-01.jpg',
-    'background-02.jpg',
-    'background-03.jpg',
-    'background-04.jpg',
-    'background-05.jpg',
-    'background-06.jpg',
-    'background-07.jpg',
-    'background-08.jpg',
-    'background-09.jpg',
-    'background-10.jpg',
-    'background-11.jpg',
-    'background-12.jpg',
-    'background-13.jpg',
-    'background-14.jpg',
-    'background-15.jpg',
-    'background-16.jpg',
-    'background-17.jpg',
-    'background-18.jpg',
-    'background-19.jpg',
-    'background-20.jpg',
-    'background-21.jpg',
-    'background-22.jpg',
-    'background-23.jpg',
-    'background-24.jpg',
-    'background-25.jpg',
-    'background-26.jpg',
-    'background-27.jpg',
-    'background-28.jpg',
-    'background-29.jpg',
-    'background-30.jpg',
-    'background-31.jpg',
-  ];
-
   const [indexImg, setIndexImg] = useState(JSON.parse(localStorage.getItem('indexImg')));
   const [showImg, setShowImg] = useState(true);
   const [statusToggle, setStatusToggle] = useState(
@@ -82,7 +46,6 @@ function Home() {
       handelBack();
     }
   };
-
   const handelChangeImgBackGround = (index) => {
     setIndexImg(index);
     // save selected image to localStorage
@@ -104,10 +67,9 @@ function Home() {
 
   return (
     <div className="w-[100%] h-[100%]" id="app">
-      <ImgBackGround listBackground={listBackground} indexImg={indexImg}></ImgBackGround>
+      <ImgBackGround indexImg={indexImg}></ImgBackGround>
       <BackGround
         showImg={showImg}
-        listBackground={listBackground}
         handelChangeImgBackGround={handelChangeImgBackGround}
       ></BackGround>
       <div className="flex items-center justify-center absolute w-[100vw] h-[100vh] ">
