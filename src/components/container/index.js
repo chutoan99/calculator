@@ -1,10 +1,10 @@
 import './home.css';
-import Toggle from '../toggle/index';
 import Input from '../input/index';
+import Button from '../button/index';
+import Toggle from '../toggle/index';
 import BackGround from '../backGround/index';
 import ImgBackGround from '../imgBackGround/index';
 import { useEffect, useState } from 'react';
-import Button from '../button';
 
 function Home() {
   // BACKGROUND LIST
