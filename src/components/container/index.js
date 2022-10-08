@@ -5,6 +5,7 @@ import BackGround from '../backGround/index';
 import ImgBackGround from '../imgBackGround/index';
 import { useEffect, useState } from 'react';
 import Button from '../button';
+
 function Home() {
   // BACKGROUND LIST
   const listBackground = [
@@ -44,6 +45,7 @@ function Home() {
 
   const [indexImg, setIndexImg] = useState(JSON.parse(localStorage.getItem('indexImg')));
   const [showImg, setShowImg] = useState(true);
+  const [isPlay, setPlay] = useState(false);
   const [statusToggle, setStatusToggle] = useState(
     JSON.parse(localStorage.getItem('statusToggle'))
   );
@@ -53,7 +55,6 @@ function Home() {
   useEffect(() => {
     document.addEventListener('keydown', handelKeyDown, true);
   }, []);
-
   const handelClickBtn = (e) => {
     setInput(input.concat(e.target.name));
   };
