@@ -7,10 +7,10 @@ import ImgBackGround from '../imgBackGround/index';
 import { useEffect, useState } from 'react';
 
 function Home() {
-  const [indexImg, setIndexImg] = useState(JSON.parse(localStorage.getItem('indexImg')));
+  const [indexImg, setIndexImg] = useState(JSON.parse(localStorage.getItem('indexImg')) || 0);
   const [showImg, setShowImg] = useState(true);
   const [statusToggle, setStatusToggle] = useState(
-    JSON.parse(localStorage.getItem('statusToggle'))
+    JSON.parse(localStorage.getItem('statusToggle')) || 'wrapperDark'
   );
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
@@ -56,6 +56,7 @@ function Home() {
     }, 1000);
   };
   const handelToggle = () => {
+    console.log(statusToggle);
     if (statusToggle === 'wrapperWhite') {
       setStatusToggle('wrapperDark');
       localStorage.setItem('statusToggle', JSON.stringify('wrapperDark'));
