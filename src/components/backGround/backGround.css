@@ -22,3 +22,11 @@
 .offcanvas-backdrop {
   background-color: unset !important;
 }
+@media screen and (max-width: 480px) {
+  .fixed-top {
+    position: absolute !important;
+    top: 15px !important;
+    left: unset !important;
+    right: 0 !important;
+  }
+}

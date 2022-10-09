@@ -3,7 +3,7 @@ import data from '../../data';
 function BackGround(props) {
   const { handelChangeImgBackGround, showImg } = props;
   return (
-    <nav className="navbar navbar-dark fixed-top">
+    <nav className="navbar navbar-dark fixed-top ">
       <div className="container-fluid sm:absolute sm:top-[100%]">
         <a className="navbar-brand" href="#"></a>
         <button
@@ -55,7 +55,7 @@ function BackGround(props) {
                   className="offcanvas-title text-center text-white"
                   id="offcanvasDarkNavbarLabel"
                 >
-                  For MOBiLE
+                  For MOBILE
                 </h5>
                 <div className="max-h-[100vh] py-[20px] grid grid-cols-2  ">
                   {data.map((item, index) => (

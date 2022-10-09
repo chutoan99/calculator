@@ -56,7 +56,6 @@ function Home() {
     }, 1000);
   };
   const handelToggle = () => {
-    console.log(statusToggle);
     if (statusToggle === 'wrapperWhite') {
       setStatusToggle('wrapperDark');
       localStorage.setItem('statusToggle', JSON.stringify('wrapperDark'));
